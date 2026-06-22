@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #252525;
+}
+
+#app {
+  background: #f6d300;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+h1 {
+  color: #252525;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+#game-field {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 30px 8px; 
+  background: #252525;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 50% 80%, #3d2b1f, #1f140e);
+  border-radius: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goblin {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  pointer-events: none;
+}
